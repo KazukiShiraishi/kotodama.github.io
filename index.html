@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
     <head>
         <title>KOTODAMA</title>
         <meta charset="UTF-8" />
@@ -8,66 +8,76 @@
         <link rel="stylesheet" href="stylesheet.css">        
     </head>
     <body>
-        <header>
-            <div class="title">
-                <h1>K</h1>
-                <h1 class="boin">O</h1>
-                <h1>T</h1>
-                <h1 class="boin">O</h1>
-                <h1>D</h1>
-                <h1 class="boin">A</h1>
-                <h1>M</h1>
-                <h1 class="boin">A</h1>
+        <div class="f">
+            <div class="bc">
+                <canvas id="c1"></canvas>
+                <canvas id="c2"></canvas>
             </div>
-        </header>
-        <div class="container">
-            <div class="descservice">
-                <p>言葉を母音としてlocalStorageで管理します。</p>
-                <div class="twbl">
-                    <p>Twitter :</p>
-                    <a href="https://twitter.com/_U_w_a_a_a_a_a_?ref_src=twsrc%5Etfw">@_U_w_a_a_a_a_a_</a>
+            <div class="header">
+                <header>
+                    <div class="title">
+                        <h1>K</h1>
+                        <h1 class="boin">O</h1>
+                        <h1>T</h1>
+                        <h1 class="boin">O</h1>
+                        <h1>D</h1>
+                        <h1 class="boin">A</h1>
+                        <h1>M</h1>
+                        <h1 class="boin">A</h1>
+                    </div>
+                </header>
+            </div>
+            <div class="g">
+                <div class="container">
+                    <div class="descservice">
+                        <p>言葉を母音としてlocalStorageで管理します。</p>
+                        <div class="twbl">
+                            <p>Twitter :</p>
+                            <a href="https://twitter.com/_U_w_a_a_a_a_a_?ref_src=twsrc%5Etfw">@_U_w_a_a_a_a_a_</a>
+                        </div>
+                        <div class="twbl">
+                            <p>Blog :</p>
+                            <a href="https://kansyokuk.github.io/">SHIRA-BLOG</a>
+                        </div>
+                    </div>
+        
+                    <div class="howtosearch">
+                        <input class="descbtn1" type="button" value="検索方法について &#187;" onclick="descliption1()">
+                        <ul class="descliption1">
+                            <span></span>
+                        </ul>
+                    </div>
+                    <div class="form-parent1">
+                        <form class="form1" name="search">
+                            <input class="textform" type="text" name="searchtext" value="">
+                            <input class="submitbtn1" type="button" value="検索" onclick="SearchRhyme()">
+                            <input class="submitbtn3" type="reset" value="削除">
+                        </form>
+                    </div>
+        
+                    <ul class="result">
+                        <span>検索コンテンツ</span>
+                    </ul>
+        
+                    <div class="howtoadd">
+                        <input class="descbtn2" type="button" value="追加方法について &#187;" onclick="descliption2()">
+                        <ul class="descliption2">
+        
+                        </ul>
+                    </div>
+                    <div class="form-parent2">
+                        <form class="form2" name="add">
+                            <input class="textform" type="text" name="addtext" value="">
+                            <input class="submitbtn2" type="button" value="追加" onclick="AddRhyme()">
+                            <input class="submitbtn3" type="reset" value="削除">
+                        </form>
+                    </div>
+        
+                    <ul class="list">
+                        <span>追加コンテンツ</span>
+                    </ul>
                 </div>
-                <div class="twbl">
-                    <p>Blog :</p>
-                    <a href="https://kansyokuk.github.io/">SHIRA-BLOG</a>
-                </div>
             </div>
-
-            <div class="howtosearch">
-                <input class="descbtn1" type="button" value="検索方法について" onclick="descliption1()">
-                <ul class="descliption1">
-                    <span></span>
-                </ul>
-            </div>
-            <div class="form-parent1">
-                <form class="form1" name="search">
-                    <input class="textform" type="text" name="searchtext" value="">
-                    <input class="submitbtn1" type="button" value="検索" onclick="SearchRhyme()">
-                    <input class="submitbtn3" type="reset" value="削除">
-                </form>
-            </div>
-
-            <ul class="result">
-                <span>検索コンテンツ</span>
-            </ul>
-
-            <div class="howtoadd">
-                <input class="descbtn2" type="button" value="追加方法について" onclick="descliption2()">
-                <ul class="descliption2">
-
-                </ul>
-            </div>
-            <div class="form-parent2">
-                <form class="form2" name="add">
-                    <input class="textform" type="text" name="addtext" value="">
-                    <input class="submitbtn2" type="button" value="追加" onclick="AddRhyme()">
-                    <input class="submitbtn3" type="reset" value="削除">
-                </form>
-            </div>
-
-            <ul class="list">
-                <span>追加コンテンツ</span>
-            </ul>
         </div>
 
         <script src="app.js"></script>
