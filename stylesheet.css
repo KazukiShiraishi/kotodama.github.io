@@ -89,22 +89,28 @@ body {
 }
 
 h1 {
-    width: 100%;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     font-size: 40px;
     margin: auto;
+    padding: 10px;
     text-align: center;
+    background-color: rgba(120, 204, 230, 0.4);
     color: rgb(220, 255, 255);
+    border-radius: 50%;
 }
 
 .boin {
-    color: rgb(255, 210, 240);
+    background-color: rgba(230, 120, 120, 0.4);
+    color: rgb(255, 230, 240);
+    margin: auto -20px;
 }
 
 .header {
     position: relative;
     z-index: 30;
     width: auto;
+    margin: auto;
 }
 
 header {
