@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="stylesheet.css">        
     </head>
     <body>
@@ -40,6 +41,8 @@
                             <a href="https://kansyokuk.github.io/">SHIRA-BLOG</a>
                         </div>
                     </div>
+
+                    <div class="line"></div>
         
                     <div class="howtosearch">
                         <input class="descbtn1" type="button" value="検索方法について &#187;" onclick="descliption1()">
@@ -50,14 +53,18 @@
                     <div class="form-parent1">
                         <form class="form1" name="search">
                             <input class="textform" type="text" name="searchtext" value="">
-                            <input class="submitbtn1" type="button" value="検索" onclick="SearchRhyme()">
-                            <input class="submitbtn3" type="reset" value="削除">
+                            <div class="btnsb">
+                                <input class="submitbtn1" type="button" value="検索" onclick="SearchRhyme()">
+                                <input class="submitbtn3" type="reset" value="削除">
+                            </div>
                         </form>
                     </div>
         
                     <ul class="result">
                         <span>検索コンテンツ</span>
                     </ul>
+
+                    <div class="line"></div>
         
                     <div class="howtoadd">
                         <input class="descbtn2" type="button" value="追加方法について &#187;" onclick="descliption2()">
@@ -68,8 +75,10 @@
                     <div class="form-parent2">
                         <form class="form2" name="add">
                             <input class="textform" type="text" name="addtext" value="">
-                            <input class="submitbtn2" type="button" value="追加" onclick="AddRhyme()">
-                            <input class="submitbtn3" type="reset" value="削除">
+                            <div class="btnsb">
+                                <input class="submitbtn2" type="button" value="追加" onclick="AddRhyme()">
+                                <input class="submitbtn3" type="reset" value="削除">
+                            </div>
                         </form>
                     </div>
         
